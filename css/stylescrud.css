@@ -1,0 +1,42 @@
+p { 
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 20px 0px;
+}
+
+form { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.main-container {
+  grid-area: main;
+  overflow-y: auto;
+  padding: 20px 20px;
+}
+
+.box-table { 
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+
+@media screen and (max-width: 1064px) {
+  .add-new, button.search-button, .select-category, input.search-term { 
+    width: 20rem;
+    margin: 0.7rem 0.3rem;
+  }
+
+  form { 
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .box-table { 
+    overflow-x: scroll;
+  }
+
+}
